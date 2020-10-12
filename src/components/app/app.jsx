@@ -2,9 +2,7 @@ import React from "react";
 import MainSmart from "../mainSmart/mainSmart";
 import PropTypes from "prop-types";
 
-
-const App = ({placesCount}) => {
-
+const App = ({ placesCount }) => {
   return <MainSmart placesCount={placesCount} />;
 };
 App.propTypes = {
