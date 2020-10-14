@@ -1,7 +1,7 @@
 # Личный проект «Шесть городов» [![Build status][travis-image]][travis-url]
 
 * Студент: [Дмитрий](https://up.htmlacademy.ru/react/5/user/1526275).
-* Наставник: `[Владислав Пономарев](https://htmlacademy.ru/profile/id1366303)`.
+* Наставник: [Владислав Пономарев](https://htmlacademy.ru/profile/id1366303).
 
 ---
 
