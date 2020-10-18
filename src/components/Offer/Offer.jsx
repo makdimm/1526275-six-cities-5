@@ -1,17 +1,20 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import PropTypes from "prop-types";
 
 const Offer = (props) => {
-  let styles80 = {
+  const styles80 = {
     width: "80%",
   };
-  let styles100 = {
+  const styles100 = {
     width: "100%",
   };
-  console.log(props.match.params.id);
+
+  const id = props.match.params.id;
+
   return (
     <div className="page">
-      <h1>{props.match.params.id}</h1>
+      <h1>{id}</h1>
       <header className="header">
         <div className="container">
           <div className="header__wrapper">
@@ -491,5 +494,12 @@ const Offer = (props) => {
     </div>
   );
 };
-
+Offer.propTypes = {
+  placesCount: PropTypes.number.isRequired,
+  match: PropTypes.shape({
+    params: PropTypes.shape({
+      id: PropTypes.number.isRequired,
+    }),
+  }),
+};
 export default Offer;
